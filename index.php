@@ -25,7 +25,10 @@
         ob_clean();
         readfile($fullPathFileName);
     } else {
-        echo('<html><body><button type="button" onclick="document.location=\''.ROUTE.'\';">Завантажити CSV</button><br></body></html>');
+        echo('<html><body>');
+        echo('<button type="button" onclick="document.location=\''.ROUTE.'\';">Завантажити CSV</button><br>');
+        echo('Посилання на репозиторій: <a href="https://github.com/denis-sunorigin/minimal.git">https://github.com/denis-sunorigin/minimal.git</a>');
+        echo('</body></html>');
     }
 
     function getContentViaHTTP($url) {
